@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: Rubik;
+    background-color: #2e3440;
+    color: rgb(236, 239, 244);
+}
+
+h1 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+#calculator {
+    width: 300px;
+    padding: 10px;
+    border: solid #d8dee9 5px;
+    border-radius: 10px;
+}
+
+#buttons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+#buttons button {
+    padding: 25px 0px;
+    font-size: 18px;
+}
+
+#delete {
+    grid-column: 1/3;
+}
+
+#clear {
+    grid-column: 3/5;
+}
+
+.numbers {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+    color: rgb(236, 239, 244);
+    border: 0.0625em solid rgb(76, 86, 106);
+    border-radius: 7px;
+}
+
+.numbers:hover {
+    border-color: rgb(115, 151, 186);
+    color: rgb(115, 151, 186);
+    cursor: pointer;
+}
+
+.operation {
+    background: rgb(136, 192, 208) none repeat scroll 0% 0%;
+    border-radius: 7px;
+    color: rgb(59, 66, 82);
+    border: medium none;
+}
+
+.operation:hover {
+    background-color: rgb(121, 184, 202);
+    cursor: pointer;
+}
